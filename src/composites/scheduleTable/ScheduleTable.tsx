@@ -1,10 +1,10 @@
+import Days from "@/components/days/Days";
 import React from "react";
 
 type Props = {};
 
 const ScheduleTable = (props: Props) => {
   const daysOfWeek = [
-    "Timing",
     "Monday",
     "Tuesday",
     "Wednesday",
@@ -29,11 +29,7 @@ const ScheduleTable = (props: Props) => {
   return (
     <div className="h-screen">
       {/* header */}
-      <div className="flex gap-4 items-center  mx-auto font-semibold p-2 m-1 border   ">
-        {daysOfWeek.map((day, index) => (
-          <div className="-400 px-4 py-2 w-2/12 border " key={index}> {day}</div>
-        ))}
-      </div>
+    <Days/>
 
     </div>
   );
